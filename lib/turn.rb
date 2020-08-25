@@ -38,7 +38,7 @@ end
 
 
 # Validates a player move, checks if the move is available to be placed on a tic tac toe board(that is not already taken)
-#
+# It is an actual number??? 
 
 
 def valid_move?(board, ix)
