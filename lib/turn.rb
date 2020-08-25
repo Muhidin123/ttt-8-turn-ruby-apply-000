@@ -67,6 +67,8 @@ def move_val?(num)
   end
 end
 
+#Takes a users number and the board, and places the X or O char in the position player has chosen
+
 def move(board, input_to_index, x = "X")
   board[input_to_index] = x
   return board
