@@ -5,9 +5,11 @@ def turn(board)
   if valid_move?(board, index)  == true
     move(board, index)
     display_board(board)
+  else
+    turn(board)
   end
-  input_to_index(user_input)
 end
+
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
