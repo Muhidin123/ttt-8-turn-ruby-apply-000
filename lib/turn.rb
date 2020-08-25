@@ -12,7 +12,7 @@ def turn(board)
   end
 end
 
-#Shows display board of the game
+#Shows tic tac toe board
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -22,7 +22,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-#
+# Validates a player move
 
 def valid_move?(board, ix)
   if position_taken?(board, ix) == false && move_val?(ix) == true
@@ -32,7 +32,7 @@ def valid_move?(board, ix)
   end
 end 
 
-
+ #
 
 def position_taken?(board, ix)
   if board[ix] == " " || board[ix] == "" || board[ix] == nil
