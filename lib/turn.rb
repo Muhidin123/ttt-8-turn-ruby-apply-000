@@ -22,6 +22,22 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+
+
+
+
+#Takes a user input for a char placemenet on tic tac toe board, converts it to an Integer (index integer)
+
+
+def input_to_index(user_input)
+  index = user_input.to_i
+  index -= 1
+  return index
+end
+
+
+
+
 # Validates a player move
 
 def valid_move?(board, ix)
@@ -32,7 +48,7 @@ def valid_move?(board, ix)
   end
 end 
 
- #
+
 
 def position_taken?(board, ix)
   if board[ix] == " " || board[ix] == "" || board[ix] == nil
@@ -54,13 +70,3 @@ def move(board, input_to_index, x = "X")
   board[input_to_index] = x
   return board
 end
-
-#Takes a user input for a char placemenet on tic tac toe board, converts it to an Integer (index integer)
-
-
-def input_to_index(user_input)
-  index = user_input.to_i
-  index -= 1
-  return index
-end
-
