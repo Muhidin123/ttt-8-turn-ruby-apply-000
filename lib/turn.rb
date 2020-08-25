@@ -55,7 +55,7 @@ def move(board, input_to_index, x = "X")
   return board
 end
 
-#Takes a user input for a char placeman
+#Takes a user input for a char placemenet
 def input_to_index(user_input)
   index = user_input.to_i
   index -= 1
