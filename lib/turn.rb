@@ -1,4 +1,4 @@
-#
+#Asks player for number, checks if it is valid 
 
 def turn(board)
   puts "Please enter 1-9:"
