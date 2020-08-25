@@ -56,6 +56,8 @@ def move(board, input_to_index, x = "X")
 end
 
 #Takes a user input for a char placemenet on tic tac toe board, converts it to an Integer (index integer)
+
+
 def input_to_index(user_input)
   index = user_input.to_i
   index -= 1
