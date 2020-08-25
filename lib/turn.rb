@@ -35,7 +35,10 @@ def input_to_index(user_input)
   return index
 end
 
-# Validates a player move
+
+
+# Validates a player move 
+
 
 def valid_move?(board, ix)
   if position_taken?(board, ix) == false && move_val?(ix) == true
@@ -45,7 +48,8 @@ def valid_move?(board, ix)
   end
 end 
 
- #
+
+
 
 def position_taken?(board, ix)
   if board[ix] == " " || board[ix] == "" || board[ix] == nil
