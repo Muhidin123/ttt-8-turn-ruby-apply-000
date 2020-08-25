@@ -37,7 +37,7 @@ end
 
 
 
-# Validates a player move 
+# Validates a player move, checks if the move is availibel
 
 
 def valid_move?(board, ix)
@@ -67,7 +67,7 @@ def move_val?(num)
   end
 end
 
-#Takes a users number and the board, and places the X or O char in the position player has chosen
+#Takes a users number and the board, and places the X or O char in the position player chose !! 
 
 def move(board, input_to_index, x = "X")
   board[input_to_index] = x
