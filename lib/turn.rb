@@ -1,4 +1,4 @@
-#Asks player for number, checks if it is valid and if not ask  
+#Asks player for number, checks if it is valid and if not asks repeatedly.
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -12,6 +12,7 @@ def turn(board)
   end
 end
 
+#Shows display board of the game
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -20,6 +21,8 @@ def display_board(board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
+#
 
 def valid_move?(board, ix)
   if position_taken?(board, ix) == false && move_val?(ix) == true
